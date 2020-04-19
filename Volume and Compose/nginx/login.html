@@ -1,0 +1,48 @@
+
+<!-- saved from url=(0060)https://www.roseindia.net/tutorialfiles/48709.loginpage.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Login Page</title>
+</head>
+<body data-gr-c-s-loaded="true">
+<form name="loginForm" action="https://www.google.com/">
+<table width="20%" bgcolor="0099CC" align="center">
+
+<tbody><tr>
+<td colspan="2"><center><font size="4"><b>HTML Login Page</b></font></center></td>
+</tr>
+
+<tr>
+<td>Username:</td>
+<td><input type="text" size="25" name="userid"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="Password" size="25" name="pwd"></td>
+</tr>
+
+<tr>
+<td><input type="Reset"></td>
+<td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+</tr>
+
+</tbody></table>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "asif" && form.pwd.value == "asif")
+{
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+
+
+</body></html>
